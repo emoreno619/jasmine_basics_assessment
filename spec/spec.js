@@ -34,6 +34,6 @@ describe('grader', function(){
     expect(grader.modeScore([90, 95, 87, 60])).toEqual(60)
     expect(grader.modeScore([90, 95, 87, 60, 60])).toEqual(60)
     expect(grader.modeScore([90, 60, 87, 60])).toEqual(60)
-    // expect(grader.modeScore([90, 95, 87, 60, 60, 95])).toEqual([60, 95])
+    expect(grader.modeScore([90, 95, 87, 60, 60, 95])).toEqual([60, 95])
  });   												
 });

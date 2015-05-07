@@ -74,16 +74,16 @@ var grader = (function() {
 		}
 		for (mode in modes){
 			if (modes[mode] == max)
-				return parseFloat(mode);
-				// result.push(parseFloat(mode));
+				result.push(parseFloat(mode));
+				// return parseFloat(mode);
 		}
 
-		// result = grader.bubble(result);
+		 result = grader.bubble(result);
 
-		// if (result.length == 1)
-		// 	return result[0];
-		// else
-		// 	return result;
+		 if (result.length == 1 || max == 1)
+		 	return result[0];
+		 else
+		 	return result;
 	},
 
 	bubble : function(arr){
